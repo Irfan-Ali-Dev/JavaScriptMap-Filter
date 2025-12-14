@@ -50,3 +50,29 @@ let append = ["dog", "elephant", "tiger", "dog", "elephant", "tiger"];
 const appendR = append.map((append, index) => append + `-${index}` );
 console.log(appendR);
 
+console.log("Solution # 11");
+let evenNum = [1, 2, 3, 4, 5, 6];
+const evenNumR = evenNum.filter(evenNum => evenNum % 2 === 0);
+console.log(evenNumR);
+
+console.log("Solution # 12");
+let negNum =  [-3, 4, -1, 7, -5];
+const negNumR = negNum.filter(negNum => negNum >= 0 )
+console.log(negNumR);
+
+console.log("Solution # 13");
+let names4ch =  ["Joe", "Elizabeth", "Tom", "Anna"];
+const names4chR = names4ch.filter(names4ch => names4ch.length >= 4)
+console.log(names4chR);
+
+console.log("Solution # 14");
+let actUsers = [{name: "Alice", active: true}, {name: "Bob", active: false}]
+const actUsersR = actUsers.filter(actUsers => actUsers.active == true);
+console.log(actUsersR);
+
+console.log("Solution # 15");
+let wordNames = ["Alice", "Bob", "Charlie", "David", "Emma", "Fiona", "George"];
+const wordNamesR = wordNames.filter(wordNames => wordNames.startsWith("A"))
+console.log(wordNamesR);
+
+
