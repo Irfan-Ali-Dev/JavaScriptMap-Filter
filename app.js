@@ -75,4 +75,49 @@ let wordNames = ["Alice", "Bob", "Charlie", "David", "Emma", "Fiona", "George"];
 const wordNamesR = wordNames.filter(wordNames => wordNames.startsWith("A"))
 console.log(wordNamesR);
 
+console.log("Solution # 16");
+let g10Num = [5, 8, 10, 15, 20, 22];
+const g10NumR = g10Num.filter(g10Num => g10Num > 10)
+console.log(g10NumR);
 
+console.log("Solution # 17");
+let falsyVal = [0, 1, false, 4, "", 10, null, undefined, NaN, "null"];
+const falsyValR = falsyVal.filter(falsyVal => Boolean(falsyVal));
+console.log(falsyValR);
+
+console.log("Solution # 18");
+let itemsCode = ["write code", "read book", "code review", "exercise"];
+const itemsCodeR = itemsCode.filter(itemsCode => itemsCode.includes("code") )
+console.log(itemsCodeR);
+
+console.log("Solution # 19");
+let nulValue = [1, null, 2, undefined, 3, null];
+const nulValueR = nulValue.filter(nulValue => nulValue != null);
+console.log(nulValueR);
+
+console.log("Solution # 20");
+let price99 = [{name: "Phone", price: 99}, {name: "Tablet", price: 120}];
+const price99R = price99.filter(price99 => price99.price < 100);
+console.log(price99R);
+
+console.log("Solution # 21");
+let reduceNum = [1, 2, 3, 4];
+const reduceNumR = reduceNum.reduce((a, b) => a + b);
+console.log(reduceNumR);
+
+console.log("Solution # 22");
+let reduceMax = [10, 20, 30, 40];
+const reduceMaxR = reduceMax.reduce ((a, b) => a > b ? a : b);
+console.log(reduceMaxR);
+
+console.log("Solution # 23");
+let redFruit = ["apple", "banana", "apple", "orange", "banana"];
+// const redFruitR = redFruit.reduce((a,b) => a + a ? a:b = count[redFruit])
+const redFruitR = redFruit.reduce((acc, fruit) => {
+    acc[fruit] = (acc[fruit] || 0) + 1;
+    return acc;
+}, {});
+console.log(redFruitR);
+
+
+console.log("All Completed");
